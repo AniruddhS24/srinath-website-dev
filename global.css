@@ -1,0 +1,109 @@
+
+:root {
+  --dark-color: #495367; /* Primary color */
+  --accent-color: #f2f6fd;
+  --background-color: #f9f9f9; /* Default background color */
+}
+
+.navbar-brand, .nav-link {
+  color: var(--dark-color);
+}
+
+.card-dark {
+  background-color: var(--dark-color);
+}
+
+.custom-text-dark {
+  color: var(--dark-color);
+}
+
+.custom-text-light {
+  color: #ffffff;
+}
+
+.custom-dark {
+  background-color: var(--dark-color);
+}
+
+.custom-light {
+  background-color: #ffffff;
+}
+
+.custom-accent {
+  background-color: var(--accent-color);
+}
+
+.experience-card {
+  border: 1px solid #ddd; /* Custom border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  padding: 10px; /* Padding inside the card */
+}
+
+/* .experience-card img {
+  padding: 50px;
+} */
+
+.experience-image-container {
+  height: 200px; /* Fixed height for the container */
+  display: flex;
+  align-items: center; /* Vertically center the image */
+  justify-content: center; /* Horizontally center the image */
+  overflow: hidden; /* Hide any overflow from the image */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Image inside the container */
+.experience-image-container img {
+  max-width: 50%; /* Scale image to fit the container width */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+  background-color: var(--background-color);
+}
+
+.feather-32 {
+  width: 32px;
+  height: 32px;
+}
+
+.navbar {
+  background-color: transparent !important;
+  border-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(0);
+}
+.navbar.is-scrolling {
+  background-color: rgba(216, 216, 216, 0.7) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+#skill-bubble-container::-webkit-scrollbar {
+  display: none;
+}
+.highlight-container,
+.highlight {
+  position: relative;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+.highlight-container:before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #ffd500;
+  transform: rotate(1deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}

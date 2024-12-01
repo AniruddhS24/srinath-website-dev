@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Srinath Srinivasan</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="global.css" />
+    <script>
+      // on window scroll, set isScrolling to true on navbar
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        // if scrollTop > 50 then set isScrolling to true
+        if (window.scrollY > 0) {
+          navbar.classList.add("is-scrolling");
+        } else {
+          navbar.classList.remove("is-scrolling");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-4" href="index.html" id="brand"
+          >Srinath Srinivasan</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto me-4 gap-4">
+            <a class="nav-link" href="index.html">About</a>
+            <a class="nav-link active" href="experience.html">Experience</a>
+            <a class="nav-link" href="research.html">Publications</a>
+            <a class="nav-link" href="blog.html">Resources</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid px-5 py-3" id="experience">
+      <div class="p-3 mb-3">
+        <h1 class="custom-text-dark">Work</h1>
+        <p class="fs-5 custom-text-dark">
+          Diverse experience in digital circuit design across various companies.
+          One more sentence [x]
+        </p>
+        <div id="work-container" class="row align-items-top row-cols-2 g-4">
+          <div id="synapse" class="col">
+            <div
+              class="card experience-card"
+              data-bs-toggle="collapse"
+              href="#synapse-collapse"
+              role="button"
+            >
+              <div class="experience-image-container">
+                <img src="assets/synapse.png" class="card-img-top d-block" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title custom-text-dark">Synapse Design</h5>
+                <p class="card-subtitle custom-text-dark">Technology Analyst</p>
+                <p class="card-subtitle text-secondary custom-text-dark">
+                  Jul 2012-Nov 2012
+                </p>
+                <div
+                  class="collapse"
+                  id="synapse-collapse"
+                  data-bs-parent="#work-container"
+                >
+                  <ul>
+                    <li class="custom-text-dark">
+                      Defined Gate Biasing &amp; Source Biasing Low Active
+                      Leakage Power Circuit Design Techniques &amp; applied it
+                      to Digital Logic &amp; SRAM Design
+                    </li>
+                    <li class="custom-text-dark">
+                      Defined an Ultra Low Voltage (ULV) Power Supply for
+                      Digital Logic/SRAM with trade off free Ultra High
+                      Performance
+                    </li>
+                    <li class="custom-text-dark">
+                      Defined the Low Active Leakage Power &amp; VTH Variation
+                      Aware Design Methodology for using Depletion mode
+                      Threshold Voltages for Low Area &amp; an Ultra High
+                      Performance in Logic
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="infosys" class="col">
+            <div
+              class="card experience-card"
+              data-bs-toggle="collapse"
+              href="#infosys-collapse"
+              role="button"
+            >
+              <div class="experience-image-container">
+                <img src="assets/infosys.png" class="card-img-top d-block" />
+              </div>
+              <div class="card-body custom-text-dark">
+                <h5 class="card-title">Infosys</h5>
+                <p class="card-subtitle">Associate Consultant</p>
+                <p class="card-subtitle text-secondary">Nov 2011 - Jun 2012</p>
+                <div
+                  class="collapse"
+                  id="infosys-collapse"
+                  data-bs-parent="#work-container"
+                >
+                  <ul>
+                    <li>
+                      Worked on 45nm Cutting edge Research on Standard Cell
+                      Library Circuit Design, Defined Low Active Leakage Power
+                      Consumption Methodology in Standard Cell Library based
+                      Designs
+                    </li>
+                    <li>
+                      Implemented Transistor level Single Rail CVSL NAND2 gate
+                      for Low Active Leakage Power, Low Area &amp; hence Low
+                      Dynamic Power &amp; an Ultra High Performance comparable
+                      to Domino Logic's An Ultra High Performance
+                    </li>
+                    <li>
+                      Selected Paper on the above topic in Embedded Systems
+                      Conference 2012, Boston, MA, USA
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="arm" class="col">
+            <div
+              class="card experience-card"
+              data-bs-toggle="collapse"
+              href="#arm-collapse"
+              role="button"
+            >
+              <div class="experience-image-container">
+                <img src="assets/arm.png" class="card-img-top d-block" />
+              </div>
+              <div class="card-body custom-text-dark">
+                <h5 class="card-title">ARM Embedded Technologies</h5>
+                <p class="card-subtitle">
+                  Consultant PIPD (Physical Intellectual Property Division)
+                </p>
+                <p class="card-subtitle text-secondary">Feb 2007 - Feb 2008</p>
+                <div
+                  class="collapse"
+                  id="arm-collapse"
+                  data-bs-parent="#work-container"
+                >
+                  <ul>
+                    <li>
+                      Worked on Transistor level Sizing of Combinatorial,
+                      Complex Gates, and Flip-Flops
+                    </li>
+                    <li>
+                      Standard Cell Characterization using ARM internal tools
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="ibm" class="col">
+            <div
+              class="card experience-card"
+              data-bs-toggle="collapse"
+              href="#ibm-collapse"
+              role="button"
+            >
+              <div class="experience-image-container">
+                <img
+                  src="assets/ibm.png"
+                  class="card-img-top mx-auto d-block"
+                />
+              </div>
+              <div class="card-body custom-text-dark">
+                <h5 class="card-title">IBM Microelectronics</h5>
+                <p class="card-subtitle">Staff R&amp;D Design Engineer</p>
+                <p class="card-subtitle text-secondary">Apr 2005 - Dec 2005</p>
+                <div
+                  class="collapse"
+                  id="ibm-collapse"
+                  data-bs-parent="#work-container"
+                >
+                  <ul>
+                    <li>
+                      Worked on Signal Detector Circuit Schematic Functional
+                      Verification
+                    </li>
+                    <li>
+                      Post Layout Simulation of the Signal Detector Layout with
+                      DRC/LVS/RCX flow
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="intel" class="col">
+            <div
+              class="card experience-card"
+              data-bs-toggle="collapse"
+              href="#intel-collapse"
+              role="button"
+            >
+              <div class="experience-image-container">
+                <img
+                  src="assets/intel.png"
+                  class="card-img-top mx-auto d-block"
+                />
+              </div>
+              <div class="card-body custom-text-dark">
+                <h5 class="card-title">Intel</h5>
+                <p class="card-subtitle">Circuit Design Engineer</p>
+                <p class="card-subtitle text-secondary">Mar 2001 - Feb 2003</p>
+                <div
+                  class="collapse"
+                  id="intel-collapse"
+                  data-bs-parent="#work-container"
+                >
+                  <ul>
+                    <li>Low Power Design Technology Group</li>
+                    <li>
+                      Worked on Implementing 64 bit Adder &amp; Domino Logic
+                      Transistor level Circuit Design in the Intel Itanium Chip
+                    </li>
+                    <li>
+                      Worked on Design, development and testing of transistor
+                      level schematics of 117 Functional Unit Block (FUB)
+                      Burn-in-keeper Domino Circuit Schematic changes in the
+                      Intel Itanium chip. Ran the pvx flow, mainly on ERC tool
+                    </li>
+                    <li>
+                      Worked on Design, development and test installation and
+                      implementation of the 64-bit adder running at 1.7GHz for
+                      the Intel Itanium chip based on the patent of Mr.
+                      Sudarshan Kumar for the Intel Communications Group, Intel
+                      Corporation, Fremont, CA U.S.A
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-3">
+        <h1 class="ms-4 custom-text-dark">Skills</h1>
+        <p class="ms-4 fs-5 custom-text-dark">
+          Proficient in [1], [2], [3]. Experience in [1], [2], [3]. Can remove
+          this section if not needed.
+        </p>
+        <div
+          id="skill-bubble-container"
+          class="align-items-center mx-4"
+          style="height: 125px; overflow-x: scroll"
+        >
+          <img id="skills-bubbles" class="h-100" />
+        </div>
+      </div>
+    </div>
+    <script>
+      function experiencePageScript() {
+        const skill_list = ["c", "cpp"];
+        var skill_url = "https://skillicons.dev/icons?i=";
+        for (var i = 0; i < skill_list.length; i++) {
+          skill_url += skill_list[i];
+          if (i != skill_list.length - 1) skill_url += ",";
+        }
+        skill_url += "&perline=" + skill_list.length.toString() + "&theme=dark";
+        document
+          .getElementById("skills-bubbles")
+          .setAttribute("src", skill_url);
+
+        // make skill-bubble-container slowly scroll to the right
+        var skill_bubble_container = document.getElementById(
+          "skill-bubble-container"
+        );
+        var skill_bubble_container_left = 0;
+        var intvl = setInterval(() => {
+          skill_bubble_container_left += 1;
+          skill_bubble_container.scrollLeft = skill_bubble_container_left;
+          if (skill_bubble_container_left > 500) {
+            skill_bubble_container.style.overflowX = "scroll";
+            clearInterval(intvl);
+          }
+        }, 20);
+
+        // if the user hovers over the skill section though, stop the automatic scrolling
+        skill_bubble_container.addEventListener("mouseover", function () {
+          clearInterval(intvl);
+        });
+
+        // For each image inside the work section (devrev, bloomberg, etc) make it a bit bigger when hovering over it
+        var work_images = document
+          .getElementById("work-container")
+          .getElementsByClassName("card");
+        for (var i = 0; i < work_images.length; i++) {
+          work_images[i].addEventListener("mouseover", function () {
+            this.style.transform = "scale(1.05)";
+            this.style.transition = "transform 0.5s";
+          });
+          work_images[i].addEventListener("mouseout", function () {
+            this.style.transform = "scale(1)";
+            this.style.transition = "transform 0.5s";
+          });
+        }
+      }
+
+      experiencePageScript();
+    </script>
+  </body>
+</html>

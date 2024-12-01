@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Srinath Srinivasan</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="global.css" />
+    <script>
+      // on window scroll, set isScrolling to true on navbar
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        // if scrollTop > 50 then set isScrolling to true
+        if (window.scrollY > 0) {
+          navbar.classList.add("is-scrolling");
+        } else {
+          navbar.classList.remove("is-scrolling");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="content-wrapper">
+      <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-4" href="index.html" id="brand"
+            >Srinath Srinivasan</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto me-4 gap-4">
+              <a class="nav-link active" href="index.html">About</a>
+              <a class="nav-link" href="experience.html">Experience</a>
+              <a class="nav-link" href="research.html">Publications</a>
+              <a class="nav-link" href="blog.html">Resources</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="container-fluid px-5 py-3 d-flex align-items-center"
+        style="height: 100vh"
+        id="about"
+      >
+        <div class="row align-items-top justify-content-center column-gap-5">
+          <div class="col-md-auto">
+            <img
+              src="assets/profilepic.jpg"
+              class="img-fluid rounded-5 mx-auto d-block mb-3"
+              alt="pfp"
+              style="width: 330px"
+              id="pfp"
+            />
+
+            <div class="mt-2 rounded">
+              <p
+                class="text-center fst-italic custom-text-dark"
+                id="rolediv"
+                style="font-size: 18px"
+              >
+                Chip Design Expert
+              </p>
+            </div>
+            <div>
+              <!-- <p class="fs-5 text-center ">Full Stack Developer</p> -->
+
+              <!-- <div class="mt-2 bg-light p-2 rounded text-center">Resume</div> -->
+              <a
+                target="_blank"
+                href="https://www.example.com/"
+                type="button"
+                class="btn w-100 fs-5 custom-text-light"
+                style="background-color: #495367"
+              >
+                Resume/CV
+              </a>
+            </div>
+          </div>
+          <div class="col-7">
+            <div>
+              <p
+                class="custom-text-dark"
+                style="font-size: 72px; line-height: 1; font-weight: 500"
+                id="hello"
+              >
+                Srinath Srinivasan
+              </p>
+              <p class="fs-5 custom-text-dark">
+                Experienced professional with [x] years of experience in VLSI
+                chip design. My expertise spans digital and analog circuit
+                design, RTL design, synthesis, and physical design. I have a
+                proven track record in delivering high-performance, low-power
+                semiconductor solutions for a range of applications, including
+                telecommunications, consumer electronics, and automotive
+                systems. I am particularly interested in [x]. I am currently
+                looking for new opportunities in [x].
+              </p>
+            </div>
+            <div class="d-flex justify-content-evenly align-items-stretch mt-4">
+              <div class="card flex-grow-1 me-4 border-0 p-1 custom-accent">
+                <div
+                  class="card-body d-flex flex-column justify-content-center"
+                >
+                  <h5 class="fw-bold custom-text-dark">Education</h5>
+                  <div class="mt-2">
+                    <div>
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <span class="fs-6 custom-text-dark"
+                            ><strong>M.S. Computer Engineering</strong></span
+                          ><br />
+                          <span class="fs-6 custom-text-dark"
+                            >University of Louisiana Lafayette</span
+                          >
+                        </div>
+                        <div>
+                          <span class="fs-6 text-end custom-text-dark"
+                            >2000</span
+                          >
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between mt-2">
+                        <div>
+                          <span class="fs-6 custom-text-dark"
+                            ><strong
+                              >B.E. Computer Science & Engineering</strong
+                            ></span
+                          ><br />
+                          <span class="fs-6 custom-text-dark"
+                            >University of Madras</span
+                          >
+                        </div>
+                        <div>
+                          <span class="fs-6 text-end custom-text-dark"
+                            >1997</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card flex-grow-1 border-0 p-1 custom-accent">
+                <div
+                  class="card-body d-flex flex-column justify-content-center"
+                >
+                  <h5 class="fw-bold custom-text-dark">Contact</h5>
+                  <div class="mt-2">
+                    <i
+                      data-feather="at-sign"
+                      class="me-2 feather-32 p-1 rounded"
+                      style="color: #495367"
+                    ></i>
+                    <span class="fs-6 align-center">
+                      <a
+                        target="_blank"
+                        href="mailto:srinath.srinivasan@rocketmail.com"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        >srinath.srinivasan@rocketmail.com</a
+                      >
+                    </span>
+                  </div>
+                  <div class="mt-2">
+                    <i
+                      data-feather="phone"
+                      class="me-2 feather-32 p-1 rounded"
+                      style="color: #495367"
+                    ></i>
+                    <span class="fs-6 align-center">
+                      <a
+                        target="_blank"
+                        href="tel:+919731669049"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        >+91 973 166 9049</a
+                      >
+                    </span>
+                  </div>
+                  <div class="mt-2">
+                    <i
+                      data-feather="linkedin"
+                      class="me-2 feather-32 p-1 rounded"
+                      style="color: #495367"
+                    ></i>
+                    <span class="fs-6 align-center">
+                      <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/aniruddh-sriram/"
+                        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        >srinath-srinivasan</a
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <a
+              target="_blank"
+              href="https://www.example.com/"
+              type="button"
+              class="btn btn-dark mt-2 w-100"
+            >
+              Resume/CV
+            </a> -->
+            <div style="height: 150px"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- add a footer -->
+      <footer class="footer mt-auto py-2 bg-light" hidden>
+        <div class="container-fluid">
+          <span class="text-muted">&copy; 2023 Srinath Srinivasan</span>
+        </div>
+      </footer>
+    </div>
+    <script>
+      function aboutPageScript() {
+        // every 2 seconds, change the color of rolediv
+        var rolediv_index = 0;
+        const roles = [
+          "Digital ULSI Circuit Design",
+          "Semiconductor Device Physics",
+          "Custom Digital ULSI Design",
+          "Ultra Low Power Supply",
+          "Ultra High Performance",
+          "CMOS Process Technology",
+          "Domino Logic Design",
+          "ULP Adder Circuits",
+          "SRAM/DRAM Memory Design",
+          "Post Moore's Law Techniques",
+        ];
+        setInterval(() => {
+          let rolediv = document.getElementById("rolediv");
+          // rolediv.style.backgroundColor = light_colors[rolediv_index];
+          rolediv.innerHTML = roles[rolediv_index];
+          rolediv_index = (rolediv_index + 1) % roles.length;
+          // change the text color to light if its a dark background, and dark if its a light background
+        }, 2000);
+
+        var hello = document.getElementById("hello");
+        var hello_text = "Srinath Srinivasan";
+        hello.innerHTML = "";
+        var hello_index = 0;
+        const type_interval = setInterval(() => {
+          if (hello_index < hello_text.length) {
+            hello.innerHTML += hello_text[hello_index];
+            hello_index++;
+          }
+          if (hello_index == hello_text.length) {
+            clearInterval(type_interval);
+          }
+        }, 100);
+
+        // make the image black and white
+        var img = document.getElementById("pfp");
+        img.style.filter = "grayscale(100%)";
+        img.style.webkitFilter = "grayscale(100%)";
+
+        // make the image back to colored when hovering over it
+        img.addEventListener("mouseover", function () {
+          img.style.filter = "grayscale(0%)";
+          img.style.webkitFilter = "grayscale(0%)";
+        });
+        // make the image black and white when not hovering over it
+        img.addEventListener("mouseout", function () {
+          img.style.filter = "grayscale(100%)";
+          img.style.webkitFilter = "grayscale(100%)";
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        feather.replace();
+        aboutPageScript();
+      });
+    </script>
+  </body>
+</html>
